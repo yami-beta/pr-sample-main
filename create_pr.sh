@@ -4,7 +4,7 @@ pwd
 which git
 
 pushd ..
-git clone yami-beta/pr-sample-sub
+git clone git@github:yami-beta/pr-sample-sub
 pushd ./pr-sample-sub
 
 git checkout -b update-submodule
