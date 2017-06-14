@@ -9,11 +9,11 @@ pushd ./pr-sample-sub
 
 git config --local user.name "yami_beta"
 git config --local user.email "yami-beta@users.noreply.github.com"
-git checkout -b update-submodule
+git checkout master
 git submodule foreach git pull origin master
 git add -A
 git commit -m ':up: Update submodule'
-git push origin update-submodule
+git push origin master
 
 popd
 popd
