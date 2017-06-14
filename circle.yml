@@ -1,0 +1,12 @@
+test:
+    pre:
+        - echo "---- start test ----"
+    override:
+        - echo "done!!"
+    post:
+        - echo "---- end test ----"
+deployment:
+    deploy:
+        branch: master
+        commands:
+            - /bin/bash create_pr.sh
