@@ -6,7 +6,7 @@ test:
     post:
         - echo "---- end test ----"
 deployment:
-    deploy:
+    admin:
         branch: master
         commands:
             - /bin/bash create_pr.sh
